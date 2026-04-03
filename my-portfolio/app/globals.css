@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #344e41;
+  --background: #273a30;
   --foreground: #f2f2ef;
 }
 
@@ -35,4 +35,27 @@ body {
 
 body {
   min-height: 100vh;
+}
+
+.skills-native-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5f55 #2a3d34;
+}
+
+.skills-native-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.skills-native-scrollbar::-webkit-scrollbar-track {
+  background: #2a3d34;
+}
+
+.skills-native-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5f55;
+  border-radius: 9999px;
+  border: 2px solid #2a3d34;
+}
+
+.skills-native-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #60766b;
 }

@@ -3,13 +3,13 @@
         "navProjects": "Projects",
         "navContact": "Contact",
         "navSkills": "Skills",
-        "heroKicker": "Minimal portfolio",
-        "heroTitle": "Building calm interfaces and reliable infrastructure.",
-        "heroDescription": "I design and ship small systems that stay readable over time: deployment workflows, Terraform-based infrastructure, and clean frontends that do not get in the way.",
+        "heroKicker": "Information Systems Engineer",
+        "heroTitle": "Backend Development & Cloud Infrastructure Automation",
+        "heroDescription": "High-performance backend solutions and cloud architecture. Experience in Next.js, software quality, and deployment automation.",
         "stats": [
             {
                 "label": "Focus",
-                "value": "Infra, frontend, delivery"
+                "value": "Cloud Infrastructure, Backend, CI/CD"
             },
             {
                 "label": "Stack",
@@ -17,7 +17,7 @@
             },
             {
                 "label": "Approach",
-                "value": "Small, maintainable systems"
+                "value": "Critical, real-time systems"
             }
         ],
         "projectsKicker": "Projects",
@@ -32,13 +32,13 @@
         "navProjects": "Proyectos",
         "navContact": "Contacto",
         "navSkills": "Habilidades",
-        "heroKicker": "Portafolio minimalista",
-        "heroTitle": "Construyo interfaces tranquilas e infraestructura confiable.",
-        "heroDescription": "Dise\u00f1o y entrego sistemas peque\u00f1os que siguen siendo legibles con el tiempo: flujos de despliegue, infraestructura basada en Terraform y frontends limpios que no estorban.",
+        "heroKicker": "Ingeniero en Sistemas de Información",
+        "heroTitle": "Desarrollo Backend & Automatización de Infraestructura en la Nube",
+        "heroDescription": "Soluciones backend y arquitectura cloud de alto rendimiento. Experiencia en Next.js, calidad de software y automatización de despliegues.",
         "stats": [
             {
                 "label": "Enfoque",
-                "value": "Infra, frontend, entrega"
+                "value": "Infraestructura Cloud, Backend, CI/CD"
             },
             {
                 "label": "Stack",
@@ -46,12 +46,12 @@
             },
             {
                 "label": "Estilo",
-                "value": "Sistemas peque\u00f1os y mantenibles"
+                "value": "Sistemas críticos y de tiempo real"
             }
         ],
         "projectsKicker": "Proyectos",
         "projectsTitle": "Trabajo seleccionado",
-        "projectsDescription": "La lista de proyectos se alimenta desde JSON para que sea simple de actualizar sin tocar la estructura de la página.",
+        "projectsDescription": "Proyectos (solitarios y colaborativos) en los que trabajé a lo largo de mi carrera.",
         "skillsKicker": "Habilidades",
         "skillsTitle": "Stack tecnológico",
         "skillsDescription": "Una vista rápida de las tecnologías y herramientas que uso en software, datos e infraestructura.",

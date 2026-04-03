@@ -2,7 +2,7 @@
     "en": {
         "sections": [
             {
-                "title": "Languages",
+                "title": "Programming & Frontend",
                 "items": [
                     {
                         "name": "C++",
@@ -23,12 +23,7 @@
                     {
                         "name": "TypeScript",
                         "icon": "SiTypescript"
-                    }
-                ]
-            },
-            {
-                "title": "Frontend",
-                "items": [
+                    },
                     {
                         "name": "React",
                         "icon": "SiReact"
@@ -73,7 +68,7 @@
                 ]
             },
             {
-                "title": "DevOps & Tools",
+                "title": "Cloud Tools",
                 "items": [
                     {
                         "name": "Linux",
@@ -114,7 +109,7 @@
     "es": {
         "sections": [
             {
-                "title": "Lenguajes",
+                "title": "Backend & Frontend",
                 "items": [
                     {
                         "name": "C++",
@@ -135,12 +130,7 @@
                     {
                         "name": "TypeScript",
                         "icon": "SiTypescript"
-                    }
-                ]
-            },
-            {
-                "title": "Frontend",
-                "items": [
+                    },
                     {
                         "name": "React",
                         "icon": "SiReact"
@@ -156,7 +146,7 @@
                 ]
             },
             {
-                "title": "Backend y datos",
+                "title": "Bases de Datos & Data",
                 "items": [
                     {
                         "name": "PostgreSQL",
@@ -185,7 +175,7 @@
                 ]
             },
             {
-                "title": "DevOps y herramientas",
+                "title": "Herramientas Cloud",
                 "items": [
                     {
                         "name": "Linux",
