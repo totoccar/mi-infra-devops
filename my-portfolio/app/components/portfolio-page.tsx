@@ -68,6 +68,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
         locale === "en"
             ? "You can open or download my resume from here."
             : "Desde aqui puedes abrir o descargar mi curriculum.";
+    const menuLabel = locale === "en" ? "Menu" : "Menu";
     const linkedinDescription =
         locale === "en"
             ? "Professional profile, experience and projects."
@@ -82,7 +83,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
             <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-6 py-8 sm:px-10 lg:px-16">
                 <header className="relative z-20 flex items-center justify-between border-b border-[#d1d0c9]/36 pb-5 text-sm text-[#f0ebd8]">
                     <span className="tracking-[0.24em] uppercase">Antonio Carlos</span>
-                    <nav className="flex items-center gap-5">
+                    <nav className="hidden items-center gap-5 md:flex">
                         <a className="transition-colors hover:text-[#dad7cd]" href="#skills">
                             {text.navSkills}
                         </a>
@@ -97,28 +98,48 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                         </Link>
                         <span className="text-[#dad7cd]/56">{activeLanguageLabel}</span>
                     </nav>
+
+                    <details className="relative md:hidden">
+                        <summary className="list-none rounded-l border border-[#d0cfc8]/40 bg-[#f6f6f3]/10 px-3 py-2 text-xs uppercase tracking-[0.18em] text-[#f2f2ef]">
+                            {menuLabel}
+                        </summary>
+                        <div className="absolute right-0 top-12 z-30 grid min-w-[12rem] gap-3 rounded-l border border-[#d0cfc8]/36 bg-[#243b30]/95 p-4 backdrop-blur">
+                            <a className="transition-colors hover:text-[#dad7cd]" href="#skills">
+                                {text.navSkills}
+                            </a>
+                            <a className="transition-colors hover:text-[#dad7cd]" href="#projects">
+                                {text.navProjects}
+                            </a>
+                            <a className="transition-colors hover:text-[#dad7cd]" href="#contact">
+                                {text.navContact}
+                            </a>
+                            <Link className="transition-colors hover:text-[#dad7cd]" href={alternateHref} aria-label={alternateLabel}>
+                                {alternateLabel}
+                            </Link>
+                        </div>
+                    </details>
                 </header>
 
-                <section className="relative grid min-h-[calc(100vh-5.5rem)] place-items-center py-10 lg:min-h-[calc(100vh-6rem)] lg:py-20">
-                    <div className="grid w-full max-w-6xl gap-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(320px,0.75fr)] lg:items-center">
-                        <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
+                <section className="relative grid min-h-[calc(100vh-5.5rem)] place-items-center py-8 sm:py-10 lg:min-h-[calc(100vh-6rem)] lg:py-20">
+                    <div className="grid w-full max-w-6xl gap-8 sm:gap-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(240px,0.65fr)] lg:items-center">
+                        <div className="mx-auto max-w-3xl text-left">
                             <p className="mb-auto text-sm uppercase tracking-[0.28em] text-[#dad7cd]/82">{text.heroKicker}</p>
-                            <h1 className="font-[family-name:var(--font-display)] text-5xl leading-none tracking-tight text-[#f2f2ef] sm:text-7xl">
+                            <h1 className="font-[family-name:var(--font-display)] text-4xl leading-[0.95] tracking-tight text-[#f2f2ef] sm:text-6xl lg:text-7xl">
                                 {text.heroTitle}
                             </h1>
-                            <p className="mt-6 max-w-2xl text-base leading-8 text-[#e4e3dd]/88 sm:text-lg">
+                            <p className="mt-5 max-w-2xl text-base leading-7 text-[#e4e3dd]/88 sm:text-lg sm:leading-8">
                                 {text.heroDescription}
                             </p>
                         </div>
 
-                        <aside className="mx-auto grid w-full gap-4 rounded-l border border-[#d0cfc8]/36 bg-[#f4f4f1]/9 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:mx-0 lg:max-w-none">
+                        <aside className="mx-auto grid w-full max-w-sm gap-3 rounded-l border border-[#d0cfc8]/28 bg-[#f4f4f1]/8 p-4 shadow-[0_14px_34px_rgba(0,0,0,0.16)] backdrop-blur-sm lg:mx-0 lg:justify-self-end">
                             {text.stats.map((item) => (
                                 <div
                                     key={item.label}
-                                    className="flex items-start justify-between gap-6 border-b border-[#d0cfc8]/28 pb-4 last:border-b-0 last:pb-0"
+                                    className="flex items-start justify-between gap-4 border-b border-[#d0cfc8]/22 pb-3 last:border-b-0 last:pb-0"
                                 >
-                                    <span className="text-xs uppercase tracking-[0.24em] text-[#dad7cd]/84">{item.label}</span>
-                                    <span className="max-w-[14rem] text-right text-sm leading-6 text-[#f0efea]/90">{item.value}</span>
+                                    <span className="text-[10px] uppercase tracking-[0.2em] text-[#dad7cd]/76">{item.label}</span>
+                                    <span className="max-w-[12rem] text-right text-xs leading-5 text-[#f0efea]/84">{item.value}</span>
                                 </div>
                             ))}
                         </aside>
@@ -127,7 +148,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                     <a
                         href="#skills"
                         aria-label="Scroll down"
-                        className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1 text-[#dad7cd]/60 transition-colors hover:text-[#f2f2ef]"
+                        className="mt-6 flex flex-col items-center gap-1 text-[#dad7cd]/60 transition-colors hover:text-[#f2f2ef] lg:absolute lg:bottom-4 lg:left-1/2 lg:mt-0 lg:-translate-x-1/2"
                     >
                         <span className="block h-3 w-3 rotate-45 border-b border-r border-current animate-bounce [animation-duration:1.6s]" />
                         <span className="block h-3 w-3 rotate-45 border-b border-r border-current animate-bounce [animation-delay:120ms] [animation-duration:1.6s]" />
@@ -257,9 +278,9 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                             </aside>
                         </div>
 
-                        <div className="mt-8 grid gap-4 md:grid-cols-3">
+                        <div className="mt-8 hidden gap-4 lg:grid lg:grid-cols-3">
                             <article className="rounded-l border border-[#d0cfc8]/30 bg-[#243b30]/22 p-4">
-                                <p className="text-m font-semibold text-[#dad7cd]">01</p>
+                                <p className="text-sm font-semibold text-[#dad7cd]">01</p>
                                 <p className="mt-2 text-base text-[#f2f2ef]">Email</p>
                                 <a
                                     className="mt-1 block break-all text-sm leading-6 text-[#e6e5de]/86 underline decoration-[#dad7cd]/35 underline-offset-4 transition-colors hover:text-[#f2f2ef]"
@@ -269,30 +290,15 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                                 </a>
                             </article>
                             <article className="rounded-l border border-[#d0cfc8]/30 bg-[#243b30]/22 p-4">
-                                <p className="text-m font-semibold text-[#dad7cd]">02</p>
+                                <p className="text-sm font-semibold text-[#dad7cd]">02</p>
                                 <p className="mt-2 text-base text-[#f2f2ef]">LinkedIn</p>
                                 <p className="mt-1 text-sm leading-6 text-[#e6e5de]/86">{linkedinDescription}</p>
                             </article>
                             <article className="rounded-l border border-[#d0cfc8]/30 bg-[#243b30]/22 p-4">
-                                <p className="text-m font-semibold text-[#dad7cd]">03</p>
+                                <p className="text-sm font-semibold text-[#dad7cd]">03</p>
                                 <p className="mt-2 text-base text-[#f2f2ef]">GitHub</p>
                                 <p className="mt-1 text-sm leading-6 text-[#e6e5de]/86">{githubDescription}</p>
                             </article>
-                        </div>
-
-                        <div className="mt-8 flex items-center gap-4 border-t border-[#d0cfc8]/28 pt-6">
-                            <span
-                                className="inline-block h-10 w-10 rounded-full border border-[#d0cfc8]/40 bg-[#dad7cd] transition-all duration-100 ease-in-out hover:bg-[#f6f6f3]/40"
-                                aria-hidden="true"
-                            />
-                            <span
-                                className="inline-block h-10 w-10 rounded-full border border-[#d0cfc8]/40 bg-[#dad7cd] transition-all duration-100 ease-in-out hover:bg-[#f6f6f3]/40"
-                                aria-hidden="true"
-                            />
-                            <span
-                                className="inline-block h-10 w-10 rounded-full border border-[#d0cfc8]/40 bg-[#dad7cd] transition-all duration-100 ease-in-out hover:bg-[#f6f6f3]/40"
-                                aria-hidden="true"
-                            />
                         </div>
                     </div>
                 </section>
