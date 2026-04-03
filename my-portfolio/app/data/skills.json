@@ -1,0 +1,226 @@
+{
+    "en": {
+        "sections": [
+            {
+                "title": "Languages",
+                "items": [
+                    {
+                        "name": "C++",
+                        "icon": "SiCplusplus"
+                    },
+                    {
+                        "name": "Python",
+                        "icon": "SiPython"
+                    },
+                    {
+                        "name": "Java",
+                        "icon": "FaJava"
+                    },
+                    {
+                        "name": "Kotlin",
+                        "icon": "SiKotlin"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "icon": "SiTypescript"
+                    }
+                ]
+            },
+            {
+                "title": "Frontend",
+                "items": [
+                    {
+                        "name": "React",
+                        "icon": "SiReact"
+                    },
+                    {
+                        "name": "Next.js",
+                        "icon": "SiNextdotjs"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "icon": "SiTailwindcss"
+                    }
+                ]
+            },
+            {
+                "title": "Backend & Data",
+                "items": [
+                    {
+                        "name": "PostgreSQL",
+                        "icon": "SiPostgresql"
+                    },
+                    {
+                        "name": "MySQL",
+                        "icon": "SiMysql"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "icon": "SiMongodb"
+                    },
+                    {
+                        "name": "Prisma",
+                        "icon": "SiPrisma"
+                    },
+                    {
+                        "name": "Pandas",
+                        "icon": "SiPandas"
+                    },
+                    {
+                        "name": "OpenCV",
+                        "icon": "SiOpencv"
+                    }
+                ]
+            },
+            {
+                "title": "DevOps & Tools",
+                "items": [
+                    {
+                        "name": "Linux",
+                        "icon": "SiLinux"
+                    },
+                    {
+                        "name": "Docker",
+                        "icon": "SiDocker"
+                    },
+                    {
+                        "name": "Git",
+                        "icon": "SiGit"
+                    },
+                    {
+                        "name": "GitHub",
+                        "icon": "SiGithub"
+                    },
+                    {
+                        "name": "GitHub Actions",
+                        "icon": "SiGithubactions"
+                    },
+                    {
+                        "name": "AWS",
+                        "icon": "FaAws"
+                    },
+                    {
+                        "name": "Qt",
+                        "icon": "SiQt"
+                    },
+                    {
+                        "name": "Wireshark",
+                        "icon": "SiWireshark"
+                    }
+                ]
+            }
+        ]
+    },
+    "es": {
+        "sections": [
+            {
+                "title": "Lenguajes",
+                "items": [
+                    {
+                        "name": "C++",
+                        "icon": "SiCplusplus"
+                    },
+                    {
+                        "name": "Python",
+                        "icon": "SiPython"
+                    },
+                    {
+                        "name": "Java",
+                        "icon": "FaJava"
+                    },
+                    {
+                        "name": "Kotlin",
+                        "icon": "SiKotlin"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "icon": "SiTypescript"
+                    }
+                ]
+            },
+            {
+                "title": "Frontend",
+                "items": [
+                    {
+                        "name": "React",
+                        "icon": "SiReact"
+                    },
+                    {
+                        "name": "Next.js",
+                        "icon": "SiNextdotjs"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "icon": "SiTailwindcss"
+                    }
+                ]
+            },
+            {
+                "title": "Backend y datos",
+                "items": [
+                    {
+                        "name": "PostgreSQL",
+                        "icon": "SiPostgresql"
+                    },
+                    {
+                        "name": "MySQL",
+                        "icon": "SiMysql"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "icon": "SiMongodb"
+                    },
+                    {
+                        "name": "Prisma",
+                        "icon": "SiPrisma"
+                    },
+                    {
+                        "name": "Pandas",
+                        "icon": "SiPandas"
+                    },
+                    {
+                        "name": "OpenCV",
+                        "icon": "SiOpencv"
+                    }
+                ]
+            },
+            {
+                "title": "DevOps y herramientas",
+                "items": [
+                    {
+                        "name": "Linux",
+                        "icon": "SiLinux"
+                    },
+                    {
+                        "name": "Docker",
+                        "icon": "SiDocker"
+                    },
+                    {
+                        "name": "Git",
+                        "icon": "SiGit"
+                    },
+                    {
+                        "name": "GitHub",
+                        "icon": "SiGithub"
+                    },
+                    {
+                        "name": "GitHub Actions",
+                        "icon": "SiGithubactions"
+                    },
+                    {
+                        "name": "AWS",
+                        "icon": "FaAws"
+                    },
+                    {
+                        "name": "Qt",
+                        "icon": "SiQt"
+                    },
+                    {
+                        "name": "Wireshark",
+                        "icon": "SiWireshark"
+                    }
+                ]
+            }
+        ]
+    }
+}

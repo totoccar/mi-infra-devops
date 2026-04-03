@@ -1,0 +1,12 @@
+export function PageBackground() {
+    return (
+        <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-[#0077b6]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.24),_transparent_38%),radial-gradient(circle_at_80%_18%,_rgba(218,215,205,0.22),_transparent_30%),linear-gradient(180deg,_#30483d_0%,_#344e41_52%,_#3a5a40_100%)]" />
+            <div className="absolute left-[-10%] top-[-10%] h-[32rem] w-[32rem] rounded-full bg-[#bc4749]/25 blur-3xl" />
+            <div className="absolute right-[-8%] top-[18%] h-[26rem] w-[26rem] rounded-full bg-[#dad7cd]/12 blur-3xl" />
+            <div className="absolute bottom-[-14%] left-[18%] h-[30rem] w-[30rem] rounded-full bg-[#3f37c9]/10 blur-3xl" />
+        </div>
+    );
+}
+
+export default PageBackground;

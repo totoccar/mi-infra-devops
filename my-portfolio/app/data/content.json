@@ -1,0 +1,60 @@
+{
+    "en": {
+        "navProjects": "Projects",
+        "navContact": "Contact",
+        "navSkills": "Skills",
+        "heroKicker": "Minimal portfolio",
+        "heroTitle": "Building calm interfaces and reliable infrastructure.",
+        "heroDescription": "I design and ship small systems that stay readable over time: deployment workflows, Terraform-based infrastructure, and clean frontends that do not get in the way.",
+        "stats": [
+            {
+                "label": "Focus",
+                "value": "Infra, frontend, delivery"
+            },
+            {
+                "label": "Stack",
+                "value": "Next.js, Terraform, AWS"
+            },
+            {
+                "label": "Approach",
+                "value": "Small, maintainable systems"
+            }
+        ],
+        "projectsKicker": "Projects",
+        "projectsTitle": "Selected work",
+        "projectsDescription": "The project list is driven by JSON so it stays simple to update without touching the page layout.",
+        "skillsKicker": "Skills",
+        "skillsTitle": "Tech stack",
+        "skillsDescription": "A quick view of the technologies and tools I use across software, data, and infrastructure work.",
+        "contactDescription": "Open to infrastructure, frontend, and deployment work that values clarity over noise."
+    },
+    "es": {
+        "navProjects": "Proyectos",
+        "navContact": "Contacto",
+        "navSkills": "Habilidades",
+        "heroKicker": "Portafolio minimalista",
+        "heroTitle": "Construyo interfaces tranquilas e infraestructura confiable.",
+        "heroDescription": "Dise\u00f1o y entrego sistemas peque\u00f1os que siguen siendo legibles con el tiempo: flujos de despliegue, infraestructura basada en Terraform y frontends limpios que no estorban.",
+        "stats": [
+            {
+                "label": "Enfoque",
+                "value": "Infra, frontend, entrega"
+            },
+            {
+                "label": "Stack",
+                "value": "Next.js, Terraform, AWS"
+            },
+            {
+                "label": "Estilo",
+                "value": "Sistemas peque\u00f1os y mantenibles"
+            }
+        ],
+        "projectsKicker": "Proyectos",
+        "projectsTitle": "Trabajo seleccionado",
+        "projectsDescription": "La lista de proyectos se alimenta desde JSON para que sea simple de actualizar sin tocar la estructura de la página.",
+        "skillsKicker": "Habilidades",
+        "skillsTitle": "Stack tecnológico",
+        "skillsDescription": "Una vista rápida de las tecnologías y herramientas que uso en software, datos e infraestructura.",
+        "contactDescription": "Disponible para trabajo de infraestructura, frontend y despliegue con foco en claridad y no ruido."
+    }
+}

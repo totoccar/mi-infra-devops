@@ -1,0 +1,84 @@
+{
+    "en": [
+        {
+            "title": "Puff&Chill",
+            "summary": "Full-stack application with dynamic routes, reusable UI components, and deployment on Vercel.",
+            "stack": [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "PostgreSQL",
+                "Prisma",
+                "Tailwind CSS"
+            ],
+            "year": "2026",
+            "status": "Full-stack"
+        },
+        {
+            "title": "GymLab",
+            "summary": "Python project for motion tracking and performance reporting with data processing and visual analytics.",
+            "stack": [
+                "Python",
+                "Pandas",
+                "OpenCV",
+                "MediaPipe",
+                "Matplotlib"
+            ],
+            "year": "2026",
+            "status": "Python"
+        },
+        {
+            "title": "AyDS - SongInfo",
+            "summary": "Architecture analysis and refactoring of a Kotlin module with SOLID principles and persistence changes.",
+            "stack": [
+                "Kotlin",
+                "Architecture",
+                "SOLID",
+                "Database"
+            ],
+            "year": "2026",
+            "status": "Analysis"
+        }
+    ],
+    "es": [
+        {
+            "title": "Puff&Chill",
+            "summary": "Aplicación full-stack con rutas dinámicas, componentes reutilizables y despliegue en Vercel.",
+            "stack": [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "PostgreSQL",
+                "Prisma",
+                "Tailwind CSS"
+            ],
+            "year": "2026",
+            "status": "Full-stack"
+        },
+        {
+            "title": "GymLab",
+            "summary": "Proyecto en Python para tracking de movimiento y reportes de rendimiento con procesamiento y analítica visual.",
+            "stack": [
+                "Python",
+                "Pandas",
+                "OpenCV",
+                "MediaPipe",
+                "Matplotlib"
+            ],
+            "year": "2026",
+            "status": "Python"
+        },
+        {
+            "title": "AyDS - SongInfo",
+            "summary": "Análisis de arquitectura y refactorización de un módulo Kotlin con principios SOLID y cambios de persistencia.",
+            "stack": [
+                "Kotlin",
+                "Arquitectura",
+                "SOLID",
+                "Base de datos"
+            ],
+            "year": "2026",
+            "status": "Análisis"
+        }
+    ]
+}
