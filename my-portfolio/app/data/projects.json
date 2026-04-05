@@ -2,7 +2,7 @@
     "en": [
         {
             "title": "Puff&Chill",
-            "summary": "Full-stack application with dynamic routes, reusable UI components, and deployment on Vercel.",
+            "summary": "Full-stack web application for purchasing outdoor movie tickets. Dynamic routes, reusable components, and deployment on Vercel.",
             "stack": [
                 "React",
                 "Next.js",
@@ -11,12 +11,13 @@
                 "Prisma",
                 "Tailwind CSS"
             ],
-            "year": "2026",
-            "status": "Full-stack"
+            "year": "2025",
+            "status": "Full-stack Developer",
+            "repoUrl": "https://github.com/totoccar/Puff-Chill"
         },
         {
             "title": "GymLab",
-            "summary": "Python project for motion tracking and performance reporting with data processing and visual analytics.",
+            "summary": "Web application that analyzes training videos to estimate calories burned, count repetitions, and provide real-time technical feedback on form and performance.",
             "stack": [
                 "Python",
                 "Pandas",
@@ -24,26 +25,43 @@
                 "MediaPipe",
                 "Matplotlib"
             ],
-            "year": "2026",
-            "status": "Python"
+            "year": "2024",
+            "status": "Python Developer",
+            "repoUrl": "https://github.com/totoccar/GymLAB2024"
         },
         {
             "title": "AyDS - SongInfo",
-            "summary": "Architecture analysis and refactoring of a Kotlin module with SOLID principles and persistence changes.",
+            "summary": "Architecture analysis and refactoring of a Kotlin module using SOLID principles and persistence changes.",
             "stack": [
                 "Kotlin",
                 "Architecture",
                 "SOLID",
                 "Database"
             ],
-            "year": "2026",
-            "status": "Analysis"
+            "year": "2024",
+            "status": "Software Architecture",
+            "repoUrl": "https://github.com/totoccar/AyDS-SongInfo"
+        },
+        {
+            "title": "Hospitales2000",
+            "summary": "Web app that allows patients to book appointments with different doctors by choosing from available schedules.",
+            "stack": [
+                "Next.js",
+                "TypeScript",
+                "React",
+                "PostgreSQL",
+                "Prisma",
+                "Tailwind CSS"
+            ],
+            "year": "2024",
+            "status": "Full-stack Developer",
+            "repoUrl": "https://github.com/totoccar/Hospitales2000"
         }
     ],
     "es": [
         {
             "title": "Puff&Chill",
-            "summary": "Aplicación full-stack con rutas dinámicas, componentes reutilizables y despliegue en Vercel.",
+            "summary": "Aplicación web full-stack para compra de entradas de cine al aire libre. Rutas dinámicas, componentes reutilizables y despliegue en Vercel.",
             "stack": [
                 "React",
                 "Next.js",
@@ -52,12 +70,13 @@
                 "Prisma",
                 "Tailwind CSS"
             ],
-            "year": "2026",
-            "status": "Full-stack"
+            "year": "2025",
+            "status": "Desarrollador Full-stack",
+            "repoUrl": "https://github.com/totoccar/Puff-Chill"
         },
         {
             "title": "GymLab",
-            "summary": "Proyecto en Python para tracking de movimiento y reportes de rendimiento con procesamiento y analítica visual.",
+            "summary": "Desarrollo de aplicación web que analiza videos de entrenamiento para estimar calorías quemadas, contar repeticiones y dar feedback técnico en tiempo real sobre la técnica y el rendimiento.",
             "stack": [
                 "Python",
                 "Pandas",
@@ -65,8 +84,9 @@
                 "MediaPipe",
                 "Matplotlib"
             ],
-            "year": "2026",
-            "status": "Python"
+            "year": "2024",
+            "status": "Desarrollador Python",
+            "repoUrl": "https://github.com/totoccar/GymLAB2024"
         },
         {
             "title": "AyDS - SongInfo",
@@ -77,8 +97,24 @@
                 "SOLID",
                 "Base de datos"
             ],
-            "year": "2026",
-            "status": "Análisis"
+            "year": "2024",
+            "status": "Arquitectura de Software",
+            "repoUrl": "https://github.com/totoccar/AyDS-SongInfo"
+        },
+        {
+            "title": "Hospitales2000",
+            "summary": "Aplicación web que permite a los pacientes reservar turnos con distintos médicos eligiendo entre los horarios disponibles",
+            "stack": [
+                "Next.js",
+                "TypeScript",
+                "React",
+                "PostgreSQL",
+                "Prisma",
+                "Tailwind CSS"
+            ],
+            "year": "2024",
+            "status": "Desarrollador Full-stack",
+            "repoUrl": "https://github.com/totoccar/Hospitales2000"
         }
     ]
 }

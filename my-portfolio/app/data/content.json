@@ -22,7 +22,7 @@
         ],
         "projectsKicker": "Projects",
         "projectsTitle": "Selected work",
-        "projectsDescription": "The project list is driven by JSON so it stays simple to update without touching the page layout.",
+        "projectsDescription": "Projects (solo and collaborative) that I worked on throughout my career.",
         "skillsKicker": "Skills",
         "skillsTitle": "Tech stack",
         "skillsDescription": "A quick view of the technologies and tools I use across software, data, and infrastructure work.",

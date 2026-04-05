@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 import content from "../data/content.json";
 import projects from "../data/projects.json";
 import skills from "../data/skills.json";
@@ -12,6 +13,7 @@ type Project = {
     stack: string[];
     year: string;
     status: string;
+    repoUrl?: string;
 };
 
 type LocaleText = {
@@ -77,6 +79,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
         locale === "en"
             ? "Code samples, repositories and experiments."
             : "Muestras de codigo, repositorios y experimentos.";
+    const projectRepoLabel = locale === "en" ? "GitHub repo" : "Repositorio";
 
     return (
         <main className="relative min-h-screen overflow-hidden text-[#f0ebd8]">
@@ -190,7 +193,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                         {projectItems.map((project, index) => (
                             <article
                                 key={`${locale}-${project.title}`}
-                                className="group rounded-l border border-[#d0cfc8]/34 bg-[#f6f6f3]/8 p-6 transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#f6f6f3]/12"
+                                className="group relative rounded-l border border-[#d0cfc8]/34 bg-[#f6f6f3]/8 p-6 pb-14 transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#f6f6f3]/12"
                             >
                                 <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between md:gap-8">
                                     <div className="max-w-2xl">
@@ -214,6 +217,19 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                                         ))}
                                     </div>
                                 </div>
+
+                                {project.repoUrl ? (
+                                    <a
+                                        className="absolute bottom-4 right-4 inline-flex items-center gap-1.5 rounded-l border border-[#d0cfc8]/34 bg-[#243b30]/36 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#f0efea]/82 transition-colors hover:bg-[#243b30]/52 hover:text-[#f2f2ef]"
+                                        href={project.repoUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        aria-label={`${projectRepoLabel}: ${project.title}`}
+                                    >
+                                        <FaGithub className="text-sm" aria-hidden="true" />
+                                        GitHub
+                                    </a>
+                                ) : null}
                             </article>
                         ))}
                     </div>
