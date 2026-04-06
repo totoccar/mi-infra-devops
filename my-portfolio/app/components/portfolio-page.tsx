@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import { trackProjectClick } from "@/lib/analytics";
 import content from "../data/content.json";
 import projects from "../data/projects.json";
 import skills from "../data/skills.json";
@@ -80,6 +83,11 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
             ? "Code samples, repositories and experiments."
             : "Muestras de codigo, repositorios y experimentos.";
     const projectRepoLabel = locale === "en" ? "GitHub repo" : "Repositorio";
+
+    const handleGithubClick = (projectName: string, url: string) => {
+        void trackProjectClick(projectName);
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
 
     return (
         <main className="relative min-h-screen overflow-hidden text-[#f0ebd8]">
@@ -219,16 +227,15 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                                 </div>
 
                                 {project.repoUrl ? (
-                                    <a
+                                    <button
+                                        type="button"
                                         className="absolute bottom-4 right-4 inline-flex items-center gap-1.5 rounded-l border border-[#d0cfc8]/34 bg-[#243b30]/36 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#f0efea]/82 transition-colors hover:bg-[#243b30]/52 hover:text-[#f2f2ef]"
-                                        href={project.repoUrl}
-                                        target="_blank"
-                                        rel="noreferrer"
+                                        onClick={() => handleGithubClick(project.title, project.repoUrl!)}
                                         aria-label={`${projectRepoLabel}: ${project.title}`}
                                     >
                                         <FaGithub className="text-sm" aria-hidden="true" />
                                         GitHub
-                                    </a>
+                                    </button>
                                 ) : null}
                             </article>
                         ))}
