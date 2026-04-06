@@ -32,6 +32,7 @@ export const handler = async (event) => {
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Methods": "POST, OPTIONS",
+                "Access-Control-Allow-Headers": "content-type",
             },
             body: JSON.stringify({ message: "Click recorded successfully" }),
         };
