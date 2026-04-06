@@ -18,9 +18,9 @@ resource "aws_lambda_function_url" "track_clicks_url" {
     authorization_type = "NONE"
 
     cors {
-        allow_credentials = false
+        allow_credentials = true
         allow_origins = ["*"]
-        allow_methods = ["POST", "OPTIONS"]
+        allow_methods = ["*"]
         allow_headers = ["content-type"]
         max_age = 3600
     }
