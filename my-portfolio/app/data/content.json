@@ -4,20 +4,20 @@
         "navContact": "Contact",
         "navSkills": "Skills",
         "heroKicker": "Information Systems Engineer",
-        "heroTitle": "Backend Development & Cloud Infrastructure Automation",
-        "heroDescription": "High-performance backend solutions and cloud architecture. Experience in Next.js, software quality, and deployment automation.",
+        "heroTitle": "Full-stack development & Cloud infrastructure",
+        "heroDescription": "High-impact applications and technological solutions. Security, quality, and automated deployment with experience in critical software.",
         "stats": [
             {
                 "label": "Focus",
-                "value": "Cloud Infrastructure, Backend, CI/CD"
+                "value": "Software development, IaC, CI/CD"
             },
             {
-                "label": "Stack",
-                "value": "Next.js, Terraform, AWS"
+                "label": "Looking for",
+                "value": "Full-stack positions, DevOps roles"
             },
             {
-                "label": "Approach",
-                "value": "Critical, real-time systems"
+                "label": "Experience",
+                "value": "Critical and real-time systems, Full-stack applications"
             }
         ],
         "projectsKicker": "Projects",
@@ -26,27 +26,27 @@
         "skillsKicker": "Skills",
         "skillsTitle": "Tech stack",
         "skillsDescription": "A quick view of the technologies and tools I use across software, data, and infrastructure work.",
-        "contactDescription": "Open to infrastructure, frontend, and deployment work that values clarity over noise."
+        "contactDescription": "Contact me to discuss job opportunities, interesting projects, or anything related to technology. I'm open to new connections and collaborations."
     },
     "es": {
         "navProjects": "Proyectos",
         "navContact": "Contacto",
         "navSkills": "Habilidades",
         "heroKicker": "Ingeniero en Sistemas de Información",
-        "heroTitle": "Desarrollo Backend & Automatización de Infraestructura en la Nube",
-        "heroDescription": "Soluciones backend y arquitectura cloud de alto rendimiento. Experiencia en Next.js, calidad de software y automatización de despliegues.",
+        "heroTitle": "Desarrollo full-stack & Infraestructura en la Nube",
+        "heroDescription": "Aplicaciones de alto impacto y soluciones tecnológicas. Seguridad, calidad y despliegue automatizado con experiencia en software crítico.",
         "stats": [
             {
                 "label": "Enfoque",
-                "value": "Infraestructura Cloud, Backend, CI/CD"
+                "value": "Desarrollo de software, IaC, CI/CD"
             },
             {
-                "label": "Stack",
-                "value": "Next.js, Terraform, AWS"
+                "label": "En busca de",
+                "value": "Puestos full-stack, DevOps"
             },
             {
-                "label": "Estilo",
-                "value": "Sistemas críticos y de tiempo real"
+                "label": "Experiencia",
+                "value": "Sistemas críticos y de tiempo real, Aplicaciones full-stack"
             }
         ],
         "projectsKicker": "Proyectos",
@@ -55,6 +55,6 @@
         "skillsKicker": "Habilidades",
         "skillsTitle": "Stack tecnológico",
         "skillsDescription": "Una vista rápida de las tecnologías y herramientas que uso en software, datos e infraestructura.",
-        "contactDescription": "Disponible para trabajo de infraestructura, frontend y despliegue con foco en claridad y no ruido."
+        "contactDescription": "Contactame para charlar sobre oportunidades laborales, proyectos interesantes o cualquier cosa relacionada con tecnología. Estoy abierto a nuevas conexiones y colaboraciones."
     }
 }

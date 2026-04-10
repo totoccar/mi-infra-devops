@@ -106,11 +106,11 @@ export function SkillsScroller({ sections }: { sections: SkillSection[] }) {
             <div
                 ref={containerRef}
                 onScroll={updateActiveIndex}
-                className="skills-native-scrollbar h-[56vh] overflow-y-auto snap-y snap-proximity scroll-smooth rounded-3xl border border-[#d0cfc8]/34 bg-[#f6f6f3]/8 sm:h-[58vh] lg:h-[60vh] lg:snap-mandatory"
+                className="skills-native-scrollbar h-[56vh] rounded-sm overflow-y-auto snap-y snap-proximity scroll-smooth border border-[#d0cfc8]/34 bg-[#f6f6f3]/8 sm:h-[58vh] lg:h-[60vh] lg:snap-mandatory"
             >
                 {sections.map((section) => (
                     <article key={section.title} className="min-h-[56vh] snap-start px-5 py-6 sm:min-h-[58vh] sm:px-8 sm:py-8 lg:h-[60vh] lg:min-h-0">
-                        <p className="mb-4 block w-fit mx-auto rounded-full px-3 py-1 text-center text-[10px] uppercase tracking-[0.2em] text-[#dad7cd]/88 lg:hidden">
+                        <p className="mb-4 block w-fit mx-auto px-3 py-1  text-center text-[10px] uppercase tracking-[0.2em] text-[#dad7cd]/88 lg:hidden">
                             {section.title}
                         </p>
                         <div className="mt-1 grid grid-cols-2 gap-4 sm:grid-cols-3 xl:grid-cols-5">
@@ -120,7 +120,7 @@ export function SkillsScroller({ sections }: { sections: SkillSection[] }) {
                                 return (
                                     <div
                                         key={`${section.title}-${item.name}`}
-                                        className="group rounded-xl border border-[#d0cfc8]/28 bg-[#243b30]/32 px-4 py-6 text-center shadow-[0_8px_24px_rgba(0,0,0,0.24)] transition-transform duration-200 hover:-translate-y-0.5"
+                                        className="group rounded-sm border border-[#d0cfc8]/28 bg-[#243b30]/32 px-4 py-6 text-center shadow-[0_8px_24px_rgba(0,0,0,0.24)] transition-transform duration-200 hover:-translate-y-0.5"
                                         aria-label={item.name}
                                         title={item.name}
                                     >
@@ -153,7 +153,7 @@ export function SkillsScroller({ sections }: { sections: SkillSection[] }) {
                                 className="group"
                             >
                                 <span
-                                    className={`block h-10 w-2 rounded-sm transition-all duration-200 ${isActive
+                                    className={`block h-10 w-2 transition-all duration-200 ${isActive
                                         ? "bg-[#dad7cd]"
                                         : "bg-[#dad7cd]/42 group-hover:bg-[#dad7cd]/70"
                                         }`}

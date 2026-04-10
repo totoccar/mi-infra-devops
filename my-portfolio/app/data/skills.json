@@ -39,7 +39,7 @@
                 ]
             },
             {
-                "title": "Databases & Data",
+                "title": "Data Analysis",
                 "items": [
                     {
                         "name": "PostgreSQL",
@@ -68,7 +68,7 @@
                 ]
             },
             {
-                "title": "Cloud Tools",
+                "title": "Cloud & DevOps",
                 "items": [
                     {
                         "name": "Linux",
@@ -146,7 +146,7 @@
                 ]
             },
             {
-                "title": "Bases de Datos & Data",
+                "title": "Análisis de Datos",
                 "items": [
                     {
                         "name": "PostgreSQL",
@@ -175,7 +175,7 @@
                 ]
             },
             {
-                "title": "Herramientas Cloud",
+                "title": "Cloud & DevOps",
                 "items": [
                     {
                         "name": "Linux",

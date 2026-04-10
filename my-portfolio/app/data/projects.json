@@ -2,7 +2,7 @@
     "en": [
         {
             "title": "Puff&Chill",
-            "summary": "Full-stack web application for purchasing outdoor movie tickets. Dynamic routes, reusable components, and deployment on Vercel.",
+            "summary": "Full-stack web application for purchasing outdoor movie tickets. Dynamic routes, reusable components, and deployment on Vercel. ",
             "stack": [
                 "React",
                 "Next.js",
