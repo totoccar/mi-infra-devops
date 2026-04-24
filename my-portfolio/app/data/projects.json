@@ -1,6 +1,52 @@
 {
     "en": [
         {
+            "title": "Scholarship Tracker",
+            "summary": "Freelance full-stack platform with a Java 21 and Spring Boot 3.2 backend microservice, PostgreSQL data modeling with Spring Data JPA, validation with Spring Validation, and automated CI/CD and infrastructure workflows using Docker, Terraform, and GitHub Actions.",
+            "stack": [
+                "Java 21",
+                "Spring Boot 3.2",
+                "PostgreSQL",
+                "Spring Data JPA",
+                "Docker",
+                "Terraform",
+                "GitHub Actions"
+            ],
+            "year": "Mar 2025 - Present",
+            "status": "Full-stack Freelance Developer",
+            "repoUrl": "https://github.com/totoccar/scholarship-tracker",
+            "liveUrl": "https://scholarship-tracker-smoky.vercel.app/"
+        },
+        {
+            "title": "Cloud-Native Full-Stack Developer | Personal Portfolio",
+            "summary": "Cloud-native full-stack portfolio built with Infrastructure as Code using Terraform to automate the full resource lifecycle, S3 static hosting with CloudFront and HTTPS/TLS delivery, event-driven backend logic with AWS Lambda, and least-privilege IAM policies including Origin Access Control.",
+            "stack": [
+                "Terraform",
+                "AWS S3",
+                "CloudFront",
+                "AWS Lambda",
+                "AWS IAM",
+                "OAC",
+                "Next.js"
+            ],
+            "year": "Dec 2025 - Present",
+            "status": "Cloud-Native Full-stack Developer",
+            "repoUrl": "https://github.com/totoccar/mi-infra-devops"
+        },
+        {
+            "title": "GopherCheck",
+            "summary": "Lightweight Go-based CLI tool for monitoring website availability. It helps manage service endpoints and verify HTTP status codes directly from the terminal with fast health checks.",
+            "stack": [
+                "Go",
+                "CLI",
+                "HTTP",
+                "Monitoring"
+            ],
+            "year": "2025",
+            "status": "Go Developer",
+            "repoUrl": "https://github.com/totoccar/gophercheck"
+        },
+        {
             "title": "Puff&Chill",
             "summary": "Full-stack web application for purchasing outdoor movie tickets. Dynamic routes, reusable components, and deployment on Vercel. ",
             "stack": [
@@ -55,10 +101,57 @@
             ],
             "year": "2024",
             "status": "Full-stack Developer",
-            "repoUrl": "https://github.com/totoccar/Hospitales2000"
+            "repoUrl": "https://github.com/totoccar/Hospitales2000",
+            "liveUrl": "https://hospitales2000.vercel.app/"
         }
     ],
     "es": [
+        {
+            "title": "Scholarship Tracker",
+            "summary": "Plataforma full-stack freelance con microservicio backend en Java 21 y Spring Boot 3.2, modelado de datos en PostgreSQL con Spring Data JPA, validaciones con Spring Validation y automatización de ciclo de vida e infraestructura con Docker, Terraform y GitHub Actions.",
+            "stack": [
+                "Java 21",
+                "Spring Boot 3.2",
+                "PostgreSQL",
+                "Spring Data JPA",
+                "Docker",
+                "Terraform",
+                "GitHub Actions"
+            ],
+            "year": "Marzo 2025 - Actualidad",
+            "status": "Desarrollador Full-stack Freelance",
+            "repoUrl": "https://github.com/totoccar/scholarship-tracker",
+            "liveUrl": "https://scholarship-tracker-smoky.vercel.app/"
+        },
+        {
+            "title": "Cloud-Native Full-Stack Developer | Portfolio Personal",
+            "summary": "Portfolio full-stack cloud-native con Infraestructura como Codigo usando Terraform para automatizar el ciclo de vida de recursos, hosting estatico en S3 con CloudFront y HTTPS/TLS, backend orientado a eventos con AWS Lambda y politicas IAM de minimo privilegio con Origin Access Control.",
+            "stack": [
+                "Terraform",
+                "AWS S3",
+                "CloudFront",
+                "AWS Lambda",
+                "AWS IAM",
+                "OAC",
+                "Next.js"
+            ],
+            "year": "Diciembre 2025 - Actualidad",
+            "status": "Cloud-Native Full-stack Developer",
+            "repoUrl": "https://github.com/totoccar/mi-infra-devops"
+        },
+        {
+            "title": "GopherCheck",
+            "summary": "Herramienta CLI liviana en Go para monitorear disponibilidad de sitios web. Permite gestionar endpoints y verificar codigos de estado HTTP desde la terminal con chequeos de salud rapidos.",
+            "stack": [
+                "Go",
+                "CLI",
+                "HTTP",
+                "Monitoreo"
+            ],
+            "year": "2025",
+            "status": "Desarrollador Go",
+            "repoUrl": "https://github.com/totoccar/gophercheck"
+        },
         {
             "title": "Puff&Chill",
             "summary": "Aplicación web full-stack para compra de entradas de cine al aire libre. Rutas dinámicas, componentes reutilizables y despliegue en Vercel.",
@@ -114,7 +207,8 @@
             ],
             "year": "2024",
             "status": "Desarrollador Full-stack",
-            "repoUrl": "https://github.com/totoccar/Hospitales2000"
+            "repoUrl": "https://github.com/totoccar/Hospitales2000",
+            "liveUrl": "https://hospitales2000.vercel.app/"
         }
     ]
 }

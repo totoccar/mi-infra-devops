@@ -13,6 +13,10 @@
                         "icon": "SiPython"
                     },
                     {
+                        "name": "Golang",
+                        "icon": "SiGo"
+                    },
+                    {
                         "name": "Java",
                         "icon": "FaJava"
                     },
@@ -116,8 +120,16 @@
                         "icon": "SiCplusplus"
                     },
                     {
+                        "name": "Qt",
+                        "icon": "SiQt"
+                    },
+                    {
                         "name": "Python",
                         "icon": "SiPython"
+                    },
+                    {
+                        "name": "Golang",
+                        "icon": "SiGo"
                     },
                     {
                         "name": "Java",
@@ -200,10 +212,6 @@
                     {
                         "name": "AWS",
                         "icon": "FaAws"
-                    },
-                    {
-                        "name": "Qt",
-                        "icon": "SiQt"
                     },
                     {
                         "name": "Wireshark",

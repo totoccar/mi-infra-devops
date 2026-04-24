@@ -1,23 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import { trackProjectClick } from "@/lib/analytics";
 import content from "../data/content.json";
-import projects from "../data/projects.json";
 import skills from "../data/skills.json";
+import projects from "../data/projects.json";
+import { ProjectsSection, type Project } from "./projects-section";
 import { SkillsScroller } from "./skills-scroller";
 
 export type Locale = "en" | "es";
-
-type Project = {
-    title: string;
-    summary: string;
-    stack: string[];
-    year: string;
-    status: string;
-    repoUrl?: string;
-};
 
 type LocaleText = {
     navProjects: string;
@@ -36,6 +28,7 @@ type LocaleText = {
     contactDescription: string;
 };
 
+type ContentDictionary = Record<Locale, LocaleText>;
 type SkillItem = {
     name: string;
     icon: string;
@@ -48,12 +41,9 @@ type SkillSection = {
 
 type SkillsDictionary = Record<Locale, { sections: SkillSection[] }>;
 
-type ContentDictionary = Record<Locale, LocaleText>;
-type ProjectsDictionary = Record<Locale, Project[]>;
-
 const localizedContent = content as ContentDictionary;
-const localizedProjects = projects as ProjectsDictionary;
 const localizedSkills = skills as SkillsDictionary;
+const localizedProjects = projects as Record<Locale, Project[]>;
 
 const defaultLocale: Locale = "en";
 
@@ -94,15 +84,20 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
     const projectItems = localizedProjects[locale] ?? localizedProjects[defaultLocale];
     const skillSections = localizedSkills[locale]?.sections ?? localizedSkills[defaultLocale].sections;
     const emailHref = "mailto:antoniocarlos00@outlook.com.ar";
-    const resumeLabel = locale === "en" ? "Download CV" : "Descargar CV";
+    const previewResumeLabel = locale === "en" ? "Preview CV" : "Ver CV";
+    const downloadResumeLabel = locale === "en" ? "Download CV" : "Descargar CV";
     const contactTitle = locale === "en" ? "Contact" : "Contacto";
     const quickLinksLabel = locale === "en" ? "Quick links" : "Accesos";
     const emailLabel = locale === "en" ? "Email" : "Correo";
     const cvCardTitle = locale === "en" ? "Curriculum" : "Curriculum";
     const cvCardBody =
         locale === "en"
-            ? "You can open or download my resume from here."
-            : "Desde aquí puedes abrir o descargar mi curriculum.";
+            ? "Preview my resume in your browser or download it with the icon."
+            : "Previsualiza mi curriculum en el navegador o descargalo con el icono.";
+    const resumeFileHref =
+        locale === "en" ? "/Antonio%20Carlos%20(English).pdf" : "/Antonio%20Carlos%20CV.pdf";
+    const resumeFileName =
+        locale === "en" ? "Antonio Carlos (English).pdf" : "Antonio Carlos CV.pdf";
     const menuLabel = locale === "en" ? "Menu" : "Menu";
     const linkedinDescription =
         locale === "en"
@@ -112,10 +107,9 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
         locale === "en"
             ? "Code samples, repositories and experiments."
             : "Muestras de código, repositorios y experimentos.";
-    const projectRepoLabel = locale === "en" ? "GitHub repo" : "Repositorio";
 
-    const handleGithubClick = (projectName: string, url: string) => {
-        void trackProjectClick(projectName);
+    const handleProjectLinkClick = (projectName: string, url: string, linkType: "repo" | "live") => {
+        void trackProjectClick(`${projectName}:${linkType}`);
         window.open(url, "_blank", "noopener,noreferrer");
     };
 
@@ -213,61 +207,14 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
 
                 <div aria-hidden="true" className="my-16 border-t border-[#d0cfc8]/34 lg:my-24" />
 
-                <section id="projects" className="scroll-mt-20 flex min-h-screen flex-col justify-center pb-16">
-                    <div className="mb-6 flex items-end justify-between gap-6">
-                        <div>
-                            <p className="text-xs uppercase tracking-[0.28em] text-[#dad7cd]/82">{text.projectsKicker}</p>
-                            <h2 className="mt-2 font-(family-name:--font-display) text-3xl text-[#f2f2ef] sm:text-4xl">
-                                {text.projectsTitle}
-                            </h2>
-                        </div>
-                        <p className="max-w-md text-sm leading-6 text-[#e2e1db]/82">{text.projectsDescription}</p>
-                    </div>
-
-                    <div className="grid gap-4 rounded-sm">
-                        {projectItems.map((project, index) => (
-                            <article
-                                key={`${locale}-${project.title}`}
-                                className="group relative rounded-sm border border-[#d0cfc8]/34 bg-[#f6f6f3]/8 p-6 pb-14 transition-transform duration-200 hover:bg-[#f6f6f3]/12"
-                            >
-                                <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between md:gap-8">
-                                    <div className="max-w-2xl">
-                                        <div className="mb-3 flex items-center gap-3 text-xs uppercase tracking-[0.24em] text-[#dad7cd]/84">
-                                            <span>{String(index + 1).padStart(2, "0")}</span>
-                                            <span>{project.status}</span>
-                                            <span>{project.year}</span>
-                                        </div>
-                                        <h3 className="font-(family-name:--font-display) text-2xl text-[#f2f2ef]">{project.title}</h3>
-                                        <p className="mt-3 text-base leading-7 text-[#e4e3de]/84">{project.summary}</p>
-                                    </div>
-
-                                    <div className="flex flex-wrap gap-2 md:max-w-xs md:justify-end">
-                                        {project.stack.map((item) => (
-                                            <span
-                                                key={item}
-                                                className="rounded-sm border border-[#cfcfc8]/40 bg-[#f6f6f3]/10 px-3 py-1 text-xs uppercase tracking-[0.2em] text-[#f0efea]/90"
-                                            >
-                                                {item}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {project.repoUrl ? (
-                                    <button
-                                        type="button"
-                                        className="absolute bottom-4 right-4 inline-flex items-center gap-1.5 rounded-sm border border-[#d0cfc8]/34 bg-[#243b30]/36 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#f0efea]/82 transition-colors hover:bg-[#243b30]/52 hover:text-[#f2f2ef]"
-                                        onClick={() => handleGithubClick(project.title, project.repoUrl!)}
-                                        aria-label={`${projectRepoLabel}: ${project.title}`}
-                                    >
-                                        <FaGithub className="text-sm" aria-hidden="true" />
-                                        GitHub
-                                    </button>
-                                ) : null}
-                            </article>
-                        ))}
-                    </div>
-                </section>
+                <ProjectsSection
+                    locale={locale}
+                    projectsKicker={text.projectsKicker}
+                    projectsTitle={text.projectsTitle}
+                    projectsDescription={text.projectsDescription}
+                    projectItems={projectItems}
+                    onProjectLinkClick={handleProjectLinkClick}
+                />
 
                 <div aria-hidden="true" className="my-16 border-t border-[#d0cfc8]/34 lg:my-24" />
 
@@ -318,13 +265,25 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
                             <aside className="rounded-sm border border-[#d0cfc8]/36 bg-[#243b30]/34 p-5 lg:ml-auto lg:w-full lg:max-w-md">
                                 <p className="text-xs uppercase tracking-[0.22em] text-[#dad7cd]/84">{cvCardTitle}</p>
                                 <p className="mt-3 text-base leading-7 text-[#f0efea]/88">{cvCardBody}</p>
-                                <a
-                                    className="mt-5 inline-block rounded-sm border border-[#d0cfc8]/45 bg-[#f6f6f3]/10 px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#f2f2ef] transition-colors hover:bg-[#f6f6f3]/18"
-                                    href="/Antonio%20Carlos%20CV.pdf"
-                                    download="Antonio Carlos CV.pdf"
-                                >
-                                    {resumeLabel}
-                                </a>
+                                <div className="mt-5 flex items-center gap-2">
+                                    <a
+                                        className="inline-block rounded-sm border border-[#d0cfc8]/45 bg-[#f6f6f3]/10 px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#f2f2ef] transition-colors hover:bg-[#f6f6f3]/18"
+                                        href={resumeFileHref}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {previewResumeLabel}
+                                    </a>
+                                    <a
+                                        className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#d0cfc8]/45 bg-[#f6f6f3]/10 text-[#f2f2ef] transition-colors hover:bg-[#f6f6f3]/18"
+                                        href={resumeFileHref}
+                                        download={resumeFileName}
+                                        aria-label={downloadResumeLabel}
+                                        title={downloadResumeLabel}
+                                    >
+                                        <FaDownload className="text-sm" aria-hidden="true" />
+                                    </a>
+                                </div>
                             </aside>
                         </div>
 
